@@ -1,0 +1,131 @@
+00:38:11 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+src\gen_Abm.o: In function `Generico_MostrarTodos':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:70: undefined reference to `Generico_MostrarUno'
+src\gen_Abm.o: In function `addGenericos':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:133: undefined reference to `Generico_ObtenerIndexLibre'
+src\gen_Abm.o: In function `cargarBaja':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:238: undefined reference to `findGenericoById'
+src\gen_Abm.o: In function `removeGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:269: undefined reference to `findGenericoById'
+src\gen_Abm.o: In function `Generico_Modificacion':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:308: undefined reference to `findGenericoById'
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:319: undefined reference to `findGenericoById'
+collect2.exe: error: ld returned 1 exit status
+00:38:29 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'addGenericos':
+..\src\gen_Abm.c:133:14: warning: implicit declaration of function 'Generico_ObtenerIndexLibre' [-Wimplicit-function-declaration]
+  int index = Generico_ObtenerIndexLibre(list, len);
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\gen_Abm.c: In function 'Generico_ModificarUno':
+..\src\gen_Abm.c:161:6: warning: unused variable 'opc' [-Wunused-variable]
+  int opc;
+      ^~~
+..\src\gen_Abm.c: In function 'cargarBaja':
+..\src\gen_Abm.c:238:10: warning: implicit declaration of function 'findGenericoById' [-Wimplicit-function-declaration]
+   while (findGenericoById(list, len, idGenerico) == -1) {
+          ^~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+src\gen_Abm.o: In function `addGenericos':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:133: undefined reference to `Generico_ObtenerIndexLibre'
+src\gen_Abm.o: In function `cargarBaja':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:238: undefined reference to `findGenericoById'
+src\gen_Abm.o: In function `removeGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:269: undefined reference to `findGenericoById'
+src\gen_Abm.o: In function `Generico_Modificacion':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:308: undefined reference to `findGenericoById'
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:319: undefined reference to `findGenericoById'
+collect2.exe: error: ld returned 1 exit status
+00:38:49 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'Generico_ModificarUno':
+..\src\gen_Abm.c:161:6: warning: unused variable 'opc' [-Wunused-variable]
+  int opc;
+      ^~~
+..\src\gen_Abm.c: In function 'cargarBaja':
+..\src\gen_Abm.c:238:10: warning: implicit declaration of function 'findGenericoById' [-Wimplicit-function-declaration]
+   while (findGenericoById(list, len, idGenerico) == -1) {
+          ^~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+src\gen_Abm.o: In function `cargarBaja':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:238: undefined reference to `findGenericoById'
+src\gen_Abm.o: In function `removeGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:269: undefined reference to `findGenericoById'
+src\gen_Abm.o: In function `Generico_Modificacion':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:308: undefined reference to `findGenericoById'
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:319: undefined reference to `findGenericoById'
+collect2.exe: error: ld returned 1 exit status
+00:39:43 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'Generico_ModificarUno':
+..\src\gen_Abm.c:161:6: warning: unused variable 'opc' [-Wunused-variable]
+  int opc;
+      ^~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+00:41:23 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+00:42:34 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+00:51:24 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c:83:5: error: conflicting types for 'abm_AltaGenerico'
+ int abm_AltaGenerico(eGenerico *list, int len, int id, char name[],
+     ^~~~~~~~~~~~~~~~
+In file included from ..\src\gen_Abm.c:1:0:
+..\src\gen_Abm.h:36:5: note: previous declaration of 'abm_AltaGenerico' was here
+ int abm_AltaGenerico(eGenerico *list, int len, int id, char name[],
+     ^~~~~~~~~~~~~~~~
+00:51:36 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+00:55:02 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_ListadoBajaGenerico':
+..\src\gen_Abm.c:198:4: warning: implicit declaration of function 'removeGenerico' [-Wimplicit-function-declaration]
+    removeGenerico(list, len, idGenerico);
+    ^~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+src\gen_Abm.o: In function `abm_ListadoBajaGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:198: undefined reference to `removeGenerico'
+collect2.exe: error: ld returned 1 exit status
+00:55:19 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+01:01:06 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c:160:11: error: conflicting types for 'abm_ModificacionGenerico'
+ eGenerico abm_ModificacionGenerico(eGenerico Generico) {
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\gen_Abm.c:1:0:
+..\src\gen_Abm.h:42:5: note: previous declaration of 'abm_ModificacionGenerico' was here
+ int abm_ModificacionGenerico(eGenerico array[], int TAM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\gen_Abm.c:217:5: error: conflicting types for 'abm_ListadoModificacionGenerico'
+ int abm_ListadoModificacionGenerico(eGenerico array[], int TAM) {
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\gen_Abm.c:1:0:
+..\src\gen_Abm.h:41:11: note: previous declaration of 'abm_ListadoModificacionGenerico' was here
+ eGenerico abm_ListadoModificacionGenerico(eGenerico Generico);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+01:01:39 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+01:01:49 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 

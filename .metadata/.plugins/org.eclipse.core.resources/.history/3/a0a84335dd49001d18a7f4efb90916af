@@ -1,0 +1,376 @@
+#include "gen_Abm.h"
+
+/**
+ * \brief Genera un id autoincremental
+ * \return retorna el id
+ *
+ */
+int abm_ObtenerIdGenerico(void) {
+	static int idIncrementalGenerico = 0;
+	return idIncrementalGenerico++;
+}
+
+/**
+ * \brief setea el campo isEmpty a LIBRE
+ * \param Generico list array de Generico
+ * \param len maximo tamaño de array se Genericos
+ * \return Retorna 0 si ok o -1 todo mal
+ *
+ */
+int initGenericos(eGenerico *list, int len) {
+	int i;
+	int rtn = -1;
+
+	//SI EXISTE EL ARRAY Y EL LIMITE ES VALIDO
+	if (list != NULL && len > 0) {
+		//RECORRO TODO EL ARRAY
+		rtn = 0;
+		for (i = 0; i < len; i++) {
+			//SET ESTADO DE "LIBRE"
+			list[i].isEmpty = LIBRE;
+		}
+	}
+
+	return rtn;
+}
+
+/**
+ * \brief Retorna pos del array con un isEmpty == LIBRE o -1 si no encuentra nada
+ * \param Generico array Array de Generico
+ * \param TAM len del array de Genericos
+ * \return pos del array si encuentra o -1 si no
+ */
+int Generico_ObtenerIndexLibre(eGenerico array[], int TAM) {
+	int rtn = -1;
+	int i;
+
+	//SI EXISTE EL ARRAY Y EL LIMITE ES VALIDO
+	if (array != NULL && TAM > 0) {
+		//RECORRO TODO EL ARRAY
+		for (i = 0; i < TAM; i++) {
+			//PREGUNTO POR EL ESTADO "LIBRE"
+			if (array[i].isEmpty == LIBRE) {
+				//OBTENGO EL PRIMER INDEX DEL VECTOR "LIBRE" Y SALGO
+				rtn = i;
+				break;
+			}
+		}
+	}
+
+	return rtn;
+}
+
+/**
+ * \brief Devuelve pos del array del id q llega por parametros
+ * \param Generico list array de Generico
+ * \param len tamaño de array
+ * \return Retorna index de la posicion del id encontrado o -1 si nada
+ */
+int findGenericoById(eGenerico *list, int len, int id) {
+	int rtn = -1;
+	int i;
+
+	//SI EXISTE EL ARRAY Y EL LIMITE ES VALIDO
+	if (list != NULL && len > 0) {
+		for (i = 0; i < len; i++) {
+			if (list[i].id == id && list[i].isEmpty == OCUPADO) {
+				//DEVUELVO EL INDEX DE DONDE ESTA EL ID BUSCADO Y SALGO
+				rtn = i;
+				break;
+			}
+		}
+	}
+
+	return rtn;
+}
+
+/**
+ * \brief Recibe un Generico y lo printfea en pantalla
+ * \param Generico recibe un Generico
+ */
+void Generico_MostrarUno(eGenerico Generico) {
+	// Modificar esto para que muestre data generica siempre
+	/*printf("\n\t> %d %s %s %f %d %s\n", Generico.id, Generico.name,
+	 Generico.lastName, Generico.price, Generico.typeGenerico,
+	 Generico.flycode);*/
+}
+
+/**
+ * \brief Funcion que itera el array que recibe y lo printfea en pantalla
+ * \param Generico list array de Generico
+ * \param len tamaño de array
+ * \return Retorna 1 si el array tiene datos cargados o 9 si nada
+ */
+int Generico_MostrarTodos(eGenerico array[], int TAM) {
+	int i;
+	int rtn = 0;
+	int cantidad = 0;
+
+	if (array != NULL && TAM > 0) {
+		printf("\n\t> ID NOMBRE APELLIDO PRECIO TIPO CODIGO");
+		for (i = 0; i < TAM; i++) {
+			if (array[i].isEmpty == OCUPADO) {
+				Generico_MostrarUno(array[i]);
+				cantidad++;
+			}
+		}
+	}
+
+	if (cantidad > 0) {
+		rtn = 1;
+	}
+
+	return rtn;
+}
+
+/**
+ * \brief Permite al usuario la carga de datos inicialers
+ * \param name puntero a la var name
+ * \param lastName puntero a la var lastName
+ * \param price puntero a la var price
+ * \param typeGenerico puntero a la var typeGenerico
+ * \param flycode puntero a la var flycode
+ * \param userID puntero a la var userID
+ * \param statusFlight puntero a la var statusFlight
+ *  */
+void cargarDatos(char *name, char *lastName, float *price, int *typeGenerico,
+		char *flycode, int *userID, int *statusFlight) {
+
+	utn_getString("\nIngrese nombre de pasajero: ", "Nombre erroneo", 9999,
+	MAX_CHARS_NAME, name);
+	fflush(stdin);
+	utn_getString("\nIngrese apellido de pasajero: ", "Apellido erroneo", 9999,
+	MAX_CHARS_NAME, lastName);
+	fflush(stdin);
+	utn_getNumeroDecimal(&*price, "\nIngresa el precio del vuelo: ",
+			"\nEl valor ingresado no es valido", 0, 10000000, 500);
+	utn_getString("\nIngrese el codigo de vuelo: ", "Error en el codigo", 99999,
+	MAX_CHARS_CODE, flycode);
+	fflush(stdin);
+	utn_getNumero(&*typeGenerico,
+			"\nIngrese el tipo de pasajero: (1. ECONOMICO / 2. MEDIO / 3. ALTA)",
+			"Tipo ingresado invalido.", 1, 3, 5000);
+	utn_getNumero(&*typeGenerico,
+			"\nIngrese el estado de vuelo (1. ACTIVO / 2. INACTIVO: ",
+			"Estado ingresado invalido.", 1, 2, 5000);
+}
+
+/**
+ * \brief Permite al usuario la carga de datos inicialers
+ * \param Generico array de Generico
+ * \param name a la var name
+ * \param lastName a la var lastName
+ * \param price a la var price
+ * \param typeGenerico  a la var typeGenerico
+ * \param flycode a la var flycode
+ * \param userID a la var userID
+ * \param statusFlight a la var statusFlight
+ * Return 1 si addeo bien el Generico y -1 si no
+ *  */
+int addGenericos(eGenerico *list, int len, int id, char name[], char lastName[],
+		float price, int typeGenerico, char flycode[], int statusFlight) {
+	int rtn = -1;
+
+	eGenerico auxGenerico;
+
+	int index = Generico_ObtenerIndexLibre(list, len);
+	//SI INDEX == -1 ARRAY LLENO
+	//SI INDEX != -1 TENGO EN INDEX POSICION DE ARRAY LIBRE
+	if (index != -1 && list != NULL) {
+
+		// Modificar esto para pedir la data respectiva
+		/*strncpy(auxGenerico.name, name, MAX_CHARS_NAME);
+		 auxGenerico.id = id;
+		 strncpy(auxGenerico.lastName, lastName, MAX_CHARS_NAME);
+		 auxGenerico.price = price;
+		 auxGenerico.typeGenerico = typeGenerico;
+		 strncpy(auxGenerico.flycode, flycode, MAX_CHARS_CODE);
+		 auxGenerico.statusFlight = statusFlight;*/
+
+		auxGenerico.isEmpty = OCUPADO;
+		list[index] = auxGenerico;
+
+		rtn = 1;
+	}
+	return rtn;
+}
+
+/**
+ * \brief Menu que permite a el usuario seleccionar que campo de Generico modificar
+ * \param Generico array de Generico
+ * Return retorna el aux del Generico
+ *  */
+eGenerico Generico_ModificarUno(eGenerico Generico) {
+	int opc;
+	eGenerico auxiliar = Generico;
+
+	/*
+	 do {
+	 printf("\n--- Modificación de usuario ---\n");
+	 printf("\n1. Nombre"
+	 "\n2. Apellido"
+	 "\n3. Precio"
+	 "\n4. Tipo de pasajero"
+	 "\n5. Codigo de vuelo"
+	 "\n6. ESTADO DE VUELO"
+	 "\n7. Volver al menú principal");
+	 utn_getNumero(&opc, "\nIngrese la opcion: ", "\nOpcion erronea", 1, 6,
+	 99999);
+
+	 fflush(stdin);
+	 switch (opc) {
+	 case 1:
+	 utn_getString("\nIngrese nombre de pasajero: ", "Nombre erroneo",
+	 9999,
+	 MAX_CHARS_NAME, auxiliar.name);
+	 break;
+	 case 2:
+	 utn_getString("\nIngrese apellido de pasajero: ",
+	 "Apellido erroneo", 9999,
+	 MAX_CHARS_NAME, auxiliar.lastName);
+	 break;
+	 case 3:
+	 utn_getNumeroDecimal(&auxiliar.price,
+	 "\nIngresa el precio del vuelo: ",
+	 "\nEl valor ingresado no es valido", 0, 10000000, 500);
+	 break;
+	 case 4:
+	 utn_getNumero(&auxiliar.typeGenerico,
+	 "\nIngrese el tipo de pasajero: ",
+	 "Tipo ingresado invalido.", 1, 3, 5000);
+	 break;
+	 case 5:
+	 utn_getString("\nIngrese el codigo de vuelo: ",
+	 "Error en el codigo", 99999,
+	 MAX_CHARS_CODE, auxiliar.flycode);
+	 break;
+	 case 6:
+	 utn_getNumero(&auxiliar.typeGenerico,
+	 "\nIngrese el tipo de pasajero: (1. ACTIVO / 2. INACTIVO)",
+	 "Tipo ingresado invalido.", 1, 2, 5000);
+	 break;
+	 }
+
+	 } while (opc != 7);
+	 */
+
+	return auxiliar;
+}
+
+/**
+ * \brief Permite al usuario la carga de datos inicialers
+ * \param Generico array de Generico
+ * \param len tam del array
+ * Return 1 si encontro el Generico y -1 si no
+ *  */
+int cargarBaja(eGenerico list[], int len) {
+	int rtn = -1;
+	int idGenerico;
+	int flag = 0;
+	int confirm = -1;
+
+	if (Generico_MostrarTodos(list, len)) {
+		//BANDERA EN 1 SI HAY Generico DADOS DE ALTA PARA LISTAR
+		flag = 1;
+	}
+
+	if (flag) {
+		utn_getNumero(&idGenerico, "Ingrese ID a dar de baja",
+				"Valor incorrecto", 0, len, 9999);
+
+		while (findGenericoById(list, len, idGenerico) == -1) {
+			puts("\n --- ID INEXISTENTE ---");
+
+			utn_getNumero(&idGenerico, "Ingrese ID a dar de baja: ",
+					"Valor incorrecto", 0, len, 99999);
+		}
+
+		utn_getNumero(&confirm,
+				"\nEsta seguro que desea dar de baja? (1. SI - 2. NO)",
+				"Opcion incorrecta", 1, 2, 9999);
+		if (confirm == 1) {
+			removeGenerico(list, len, idGenerico);
+		} else {
+			rtn = -1;
+		}
+	}
+
+	return rtn;
+}
+
+/**
+ * \brief Cambia el isEmpty del pasajero encontrado por id
+ * \param Generico list array de Generico
+ * \param len tamaño del array
+ * \param id de usuario
+ * Return retorna 0 si dio de baja el pasajero y -1 si no
+ *  */
+int removeGenerico(eGenerico *list, int len, int id) {
+	int rtn = -1;
+	int index;
+
+	index = findGenericoById(list, len, id);
+	if (index != -1) {
+		list[index].isEmpty = BAJA;
+		printf("\n ---- Usuario: %s %s dado de baja exitosamente ---- \n",
+				list[index].name, list[index].lastName);
+		rtn = 0;
+	}
+
+	return rtn;
+}
+
+/**
+ * \brief Encuentra el id del usuario que sera modificado
+ * \param Generico list array de Generico
+ * \param TAM tamaño del array
+ * Return retorna 1 si modifico el pasajero y 0 si no
+ *  */
+int Generico_Modificacion(eGenerico array[], int TAM) {
+	int rtn = 0;
+	int idGenerico;
+	int index;
+	int flag = 0;
+	eGenerico auxiliar;
+
+	if (Generico_MostrarTodos(array, TAM)) {
+		//BANDERA EN 1 SI HAY Generico DADOS DE ALTA PARA LISTAR
+		flag = 1;
+	}
+
+	//SI HAY Generico PARA MODIFICAR
+	if (flag) {
+		//PIDO ID A MODIFICAR
+		/**USAR FUNCION GET_INT DE LIBRERIA DE INPUTS*/
+		//printf("INGRESE ID A MODIFICAR: ");
+		//scanf("%d", &idGenerico);
+		utn_getNumero(&idGenerico, "Ingrese ID a modificar: ",
+				"Valor incorrecto", 0, TAM, 99999);
+
+		//BUSCO INDEX POR ID EN ARRAY
+		while (findGenericoById(array, TAM, idGenerico) == -1) {
+			puts("NO EXISTE ID.");
+
+			/**USAR FUNCION GET_INT DE LIBRERIA DE INPUTS*/
+			//printf("INGRESE ID A DAR DE BAJA: ");
+			//scanf("%d", &idGenerico);
+			utn_getNumero(&idGenerico, "Ingrese ID a modificar: ",
+					"Valor incorrecto", 0, TAM, 99999);
+		}
+
+		//OBTENGO INDEX DEL ARRAY DE Generico A MODIFICAR
+		index = findGenericoById(array, TAM, idGenerico);
+
+		//LLAMO A FUNCION QUE MODIFICA Generico
+		auxiliar = Generico_ModificarUno(array[index]);
+
+		/**PREGUNTAR SI DESEA CONTINUAR*/
+		//MODIFICACION ACEPTADA
+		array[index] = auxiliar;
+
+		//RETORNO 1 SI SE MODIFICO CORRECTAMENTE
+		rtn = 1;
+	}
+
+	return rtn;
+}

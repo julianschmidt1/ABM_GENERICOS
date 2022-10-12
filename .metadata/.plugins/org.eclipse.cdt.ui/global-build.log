@@ -55,3 +55,65 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
 gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
 Info: Nothing to build for ABM_GENERICO
+20:31:14 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_ModificacionGenerico':
+..\src\gen_Abm.c:161:4: warning: passing argument 5 of 'utn_getString' from incompatible pointer type [-Wincompatible-pointer-types]
+    &auxiliar.name);
+    ^
+In file included from ..\src\gen_Abm.h:7:0,
+                 from ..\src\gen_Abm.c:1:
+..\src\Inputs.h:19:5: note: expected 'char *' but argument is of type 'char (*)[51]'
+ int utn_getString(char *mensaje, char *mensajeError, int reintentos,
+     ^~~~~~~~~~~~~
+..\src\gen_Abm.c:163:4: warning: passing argument 5 of 'utn_getString' from incompatible pointer type [-Wincompatible-pointer-types]
+    &auxiliar.lastName);
+    ^
+In file included from ..\src\gen_Abm.h:7:0,
+                 from ..\src\gen_Abm.c:1:
+..\src\Inputs.h:19:5: note: expected 'char *' but argument is of type 'char (*)[51]'
+ int utn_getString(char *mensaje, char *mensajeError, int reintentos,
+     ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+20:31:21 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+Info: Nothing to build for ABM_GENERICO
+20:32:26 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+20:32:39 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+Info: Nothing to build for ABM_GENERICO
+20:32:46 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+Info: Nothing to build for ABM_GENERICO
+20:33:02 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+Info: Nothing to build for ABM_GENERICO
+20:35:29 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+20:39:42 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+Info: Nothing to build for ABM_GENERICO
+20:40:52 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+Info: Nothing to build for ABM_GENERICO

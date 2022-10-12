@@ -106,47 +106,48 @@ int abm_AltaGenerico(eGenerico *lista, int tam, int id, char name[],
 	return rtn;
 }
 
-int abm_ListadoBajaGenerico(eGenerico *lista, int tam) {
+int abm_ListadoBajaGenerico(eGenerico list[], int len) {
 	int rtn = -1;
 	int idGenerico;
 	int flag = 0;
 	int confirmar = 0;
 
-	if (abm_MostrarTodosGenerico(lista, tam)) {
+	if (abm_MostrarTodosGenerico(list, len)) {
+		//BANDERA EN 1 SI HAY Generico DADOS DE ALTA PARA LISTAR
 		flag = 1;
 	}
 
 	if (flag) {
 		utn_getNumero(&idGenerico, "\nIngrese ID a dar de baja",
-				"Valor incorrecto", 0, tam, 9999);
+				"Valor incorrecto", 0, len, 9999);
 
-		while (abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1) {
+		while (abm_EncontrarGenericoPorId(list, len, idGenerico) == -1) {
 			puts("\n --- ID INEXISTENTE ---");
 
 			utn_getNumero(&idGenerico, "\nIngrese ID a dar de baja: ",
-					"Valor incorrecto", 0, tam, 99999);
+					"Valor incorrecto", 0, len, 99999);
 		}
 
 		utn_getNumero(&confirmar,
 				"\nEsta seguro que desea dar de baja? (1. SI - 0. NO)",
 				"Opcion incorrecta", 0, 1, 9999);
 		if (confirmar) {
-			abm_BajaGenerico(lista, tam, idGenerico);
+			abm_BajaGenerico(list, len, idGenerico);
 		}
 	}
 
 	return rtn;
 }
 
-int abm_BajaGenerico(eGenerico *lista, int tam, int id) {
+int abm_BajaGenerico(eGenerico *list, int len, int id) {
 	int rtn = 0;
 	int index;
 
-	index = abm_EncontrarGenericoPorId(lista, tam, id);
+	index = abm_EncontrarGenericoPorId(list, len, id);
 	if (index != -1) {
-		lista[index].isEmpty = BAJA;
+		list[index].isEmpty = BAJA;
 		printf("\n ---- Usuario: %s %s dado de baja exitosamente ---- \n",
-				lista[index].name, lista[index].lastName);
+				list[index].name, list[index].lastName);
 		rtn = 1;
 	}
 
@@ -164,7 +165,7 @@ eGenerico abm_ModificacionGenerico(eGenerico Generico) {
 	return auxiliar;
 }
 
-int abm_ListadoModificacionGenerico(eGenerico *lista, int tam) {
+int abm_ListadoModificacionGenerico(eGenerico array[], int TAM) {
 	int rtn = 0;
 	int idGenerico;
 	int index;
@@ -172,29 +173,30 @@ int abm_ListadoModificacionGenerico(eGenerico *lista, int tam) {
 	eGenerico auxiliar;
 	int confirmar = 0;
 
-	if (abm_MostrarTodosGenerico(lista, tam)) {
+	if (abm_MostrarTodosGenerico(array, TAM)) {
+		// 1 si hay Generico para mostrar
 		flag = 1;
 	}
 
 	if (flag) {
 		utn_getNumero(&idGenerico, "\nIngrese ID a modificar: ",
-				"Valor incorrecto", 0, tam, 99999);
+				"Valor incorrecto", 0, TAM, 99999);
 
-		while (abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1) {
+		while (abm_EncontrarGenericoPorId(array, TAM, idGenerico) == -1) {
 			puts("NO EXISTE ID.");
 
 			utn_getNumero(&idGenerico, "\nIngrese ID a modificar: ",
-					"Valor incorrecto", 0, tam, 99999);
+					"Valor incorrecto", 0, TAM, 99999);
 		}
 
-		index = abm_EncontrarGenericoPorId(lista, tam, idGenerico);
-		auxiliar = abm_ModificacionGenerico(lista[index]);
+		index = abm_EncontrarGenericoPorId(array, TAM, idGenerico);
+		auxiliar = abm_ModificacionGenerico(array[index]);
 
 		utn_getNumero(&confirmar,
 				"\nEsta seguro que modificar el usuario? (1. SI - 0. NO)",
 				"Opcion incorrecta", 0, 1, 9999);
 		if (confirmar) {
-			lista[index] = auxiliar;
+			array[index] = auxiliar;
 			rtn = 1;
 		}
 	}

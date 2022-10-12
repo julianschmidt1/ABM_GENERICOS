@@ -21,16 +21,16 @@ typedef struct {
 } eGenerico;
 
 int abm_ObtenerIdGenerico(void);
-int abm_InicializarGenerico(eGenerico *lista, int tam);
-int abm_ObtenerIndiceLibreGenerico(eGenerico *lista, int tam);
-int abm_EncontrarGenericoPorId(eGenerico *lista, int tam, int id);
+int abm_InicializarGenerico(eGenerico *list, int len);
+int abm_ObtenerIndiceLibreGenerico(eGenerico array[], int TAM);
+int abm_EncontrarGenericoPorId(eGenerico *list, int len, int id);
 void abm_MostrarUnGenerico(eGenerico Generico);
-int abm_MostrarTodosGenerico(eGenerico *lista, int tam);
-int abm_AltaGenerico(eGenerico *lista, int tam, int id, char name[],
+int abm_MostrarTodosGenerico(eGenerico array[], int TAM);
+int abm_AltaGenerico(eGenerico *list, int len, int id, char name[],
 		char lastName[]);
-int abm_ListadoBajaGenerico(eGenerico *lista, int tam);
-int abm_BajaGenerico(eGenerico *lista, int tam, int id);
+int abm_ListadoBajaGenerico(eGenerico list[], int len);
+int abm_BajaGenerico(eGenerico *list, int len, int id);
 eGenerico abm_ModificacionGenerico(eGenerico Generico);
-int abm_ListadoModificacionGenerico(eGenerico lista[], int tam);
+int abm_ListadoModificacionGenerico(eGenerico array[], int TAM);
 
 #endif /* GEN_ABM_H_ */

@@ -48,7 +48,6 @@ int main(void) {
 			abm_ListadoModificacionGenerico(genericos, MAX_GENERICOS);
 			break;
 		case 3:
-			abm_ListadoBajaGenerico(genericos, MAX_GENERICOS);
 			break;
 		case 4:
 			abm_MostrarTodosGenerico(genericos, MAX_GENERICOS);

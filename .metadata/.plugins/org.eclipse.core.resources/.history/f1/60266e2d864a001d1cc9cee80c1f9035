@@ -24,7 +24,7 @@ int main(void) {
 	abm_InicializarGenerico(genericos, MAX_GENERICOS);
 
 	do {
-		printf("\n1. ALTAS \n"
+		printf(" 1. ALTAS \n"
 				"2. MODIFICAR \n"
 				"3. BAJA \n"
 				"4. INFORMAR \n"
@@ -48,7 +48,6 @@ int main(void) {
 			abm_ListadoModificacionGenerico(genericos, MAX_GENERICOS);
 			break;
 		case 3:
-			abm_ListadoBajaGenerico(genericos, MAX_GENERICOS);
 			break;
 		case 4:
 			abm_MostrarTodosGenerico(genericos, MAX_GENERICOS);

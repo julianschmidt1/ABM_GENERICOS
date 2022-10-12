@@ -113,6 +113,7 @@ int abm_ListadoBajaGenerico(eGenerico *lista, int tam) {
 	int confirmar = 0;
 
 	if (abm_MostrarTodosGenerico(lista, tam)) {
+		//BANDERA EN 1 SI HAY Generico DADOS DE ALTA PARA LISTAR
 		flag = 1;
 	}
 
@@ -173,6 +174,7 @@ int abm_ListadoModificacionGenerico(eGenerico *lista, int tam) {
 	int confirmar = 0;
 
 	if (abm_MostrarTodosGenerico(lista, tam)) {
+		// 1 si hay Generico para mostrar
 		flag = 1;
 	}
 

@@ -22,7 +22,7 @@ typedef struct {
 
 int abm_ObtenerIdGenerico(void);
 int abm_InicializarGenerico(eGenerico *lista, int tam);
-int abm_ObtenerIndiceLibreGenerico(eGenerico *lista, int tam);
+int abm_ObtenerIndiceLibreGenerico(eGenerico array[], int tam);
 int abm_EncontrarGenericoPorId(eGenerico *lista, int tam, int id);
 void abm_MostrarUnGenerico(eGenerico Generico);
 int abm_MostrarTodosGenerico(eGenerico *lista, int tam);

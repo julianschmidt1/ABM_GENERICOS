@@ -228,6 +228,7 @@ int abm_ListadoModificacionGenerico(eGenerico array[], int TAM) {
 		utn_getNumero(&idGenerico, "Ingrese ID a modificar: ",
 				"Valor incorrecto", 0, TAM, 99999);
 
+		//BUSCO INDEX POR ID EN ARRAY
 		while (abm_EncontrarGenericoPorId(array, TAM, idGenerico) == -1) {
 			puts("NO EXISTE ID.");
 
@@ -235,16 +236,22 @@ int abm_ListadoModificacionGenerico(eGenerico array[], int TAM) {
 					"Valor incorrecto", 0, TAM, 99999);
 		}
 
+		//OBTENGO INDEX DEL ARRAY DE Generico A MODIFICAR
 		index = abm_EncontrarGenericoPorId(array, TAM, idGenerico);
+
+		//LLAMO A FUNCION QUE MODIFICA Generico
 		auxiliar = abm_ModificacionGenerico(array[index]);
 
+		/**PREGUNTAR SI DESEA CONTINUAR*/
+		//MODIFICACION ACEPTADA
 		utn_getNumero(&confirm,
 				"\nEsta seguro que modificar el usuario? (1. SI - 0. NO)",
 				"Opcion incorrecta", 0, 1, 9999);
 		if (confirm) {
 			array[index] = auxiliar;
-			rtn = 1;
 		}
+		//RETORNO 1 SI SE MODIFICO CORRECTAMENTE
+		rtn = 1;
 	}
 
 	return rtn;

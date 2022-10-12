@@ -40,7 +40,6 @@ int main(void) {
 					"\nApellido invalido, ingresalo de vuelta", 99999, 20,
 					apellido);
 			idUser = abm_ObtenerIdGenerico();
-			printf("%d", idUser);
 			abm_AltaGenerico(genericos, MAX_GENERICOS, idUser, nombre,
 					apellido);
 			break;
@@ -49,7 +48,6 @@ int main(void) {
 		case 3:
 			break;
 		case 4:
-			abm_MostrarTodosGenerico(genericos, MAX_GENERICOS);
 			break;
 		}
 	} while (opcion != 0);

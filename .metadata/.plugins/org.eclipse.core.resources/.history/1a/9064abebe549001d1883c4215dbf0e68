@@ -35,12 +35,11 @@ int main(void) {
 		case 1:
 			utn_getString("\nIngresa nombre: ",
 					"\nNombre invalido, ingresalo de vuelta", 99999, 20,
-					nombre);
+					&nombre);
 			utn_getString("\nIngresa apellido: ",
 					"\nApellido invalido, ingresalo de vuelta", 99999, 20,
-					apellido);
+					&apellido);
 			idUser = abm_ObtenerIdGenerico();
-			printf("%d", idUser);
 			abm_AltaGenerico(genericos, MAX_GENERICOS, idUser, nombre,
 					apellido);
 			break;
@@ -49,7 +48,6 @@ int main(void) {
 		case 3:
 			break;
 		case 4:
-			abm_MostrarTodosGenerico(genericos, MAX_GENERICOS);
 			break;
 		}
 	} while (opcion != 0);

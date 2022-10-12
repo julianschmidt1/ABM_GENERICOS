@@ -228,6 +228,7 @@ int abm_ListadoModificacionGenerico(eGenerico array[], int TAM) {
 		utn_getNumero(&idGenerico, "Ingrese ID a modificar: ",
 				"Valor incorrecto", 0, TAM, 99999);
 
+		//BUSCO INDEX POR ID EN ARRAY
 		while (abm_EncontrarGenericoPorId(array, TAM, idGenerico) == -1) {
 			puts("NO EXISTE ID.");
 

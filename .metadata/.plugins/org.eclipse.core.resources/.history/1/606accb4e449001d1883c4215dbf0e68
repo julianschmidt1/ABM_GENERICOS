@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : ABM_GENERICO.c
+ Author      : Julián Schmidt
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "gen_Abm.h"
+#define MAX_GENERICOS 20
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int opcion;
+	eGenerico genericos[MAX_GENERICOS];
+
+	abm_InicializarGenerico(genericos, MAX_GENERICOS);
+
+	do {
+
+	} while (opcion != 0);
+
+	return 0;
+}

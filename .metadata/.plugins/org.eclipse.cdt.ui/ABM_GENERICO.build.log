@@ -1,7 +1,1 @@
-01:01:49 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
-gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
-
-01:01:49 Build Finished. 0 errors, 0 warnings. (took 289ms)
-
+Info: Nothing to build for ABM_GENERICO

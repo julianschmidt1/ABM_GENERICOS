@@ -17,9 +17,6 @@ int main(void) {
 	setbuf(stdout, NULL);
 	int opcion;
 	eGenerico genericos[MAX_GENERICOS];
-	char nombre[20];
-	char apellido[20];
-	int idUser;
 
 	abm_InicializarGenerico(genericos, MAX_GENERICOS);
 
@@ -33,23 +30,12 @@ int main(void) {
 				"La opcion ingresada no es valida", 0, 4, 99999);
 		switch (opcion) {
 		case 1:
-			utn_getString("\nIngresa nombre: ",
-					"\nNombre invalido, ingresalo de vuelta", 99999, 20,
-					nombre);
-			utn_getString("\nIngresa apellido: ",
-					"\nApellido invalido, ingresalo de vuelta", 99999, 20,
-					apellido);
-			idUser = abm_ObtenerIdGenerico();
-			printf("%d", idUser);
-			abm_AltaGenerico(genericos, MAX_GENERICOS, idUser, nombre,
-					apellido);
 			break;
 		case 2:
 			break;
 		case 3:
 			break;
 		case 4:
-			abm_MostrarTodosGenerico(genericos, MAX_GENERICOS);
 			break;
 		}
 	} while (opcion != 0);

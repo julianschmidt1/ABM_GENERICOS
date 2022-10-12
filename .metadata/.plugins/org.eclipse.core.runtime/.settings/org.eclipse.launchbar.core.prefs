@@ -1,10 +1,11 @@
+LaunchTargetManager/configs/ABM_GENERICO.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/Struct.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/TP_1.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/arrays.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:TP_1.exe,org.eclipse.launchbar.core.descriptorType.default\:arrays.exe,org.eclipse.launchbar.core.descriptorType.default\:Struct.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:TP_1.exe,org.eclipse.launchbar.core.descriptorType.default\:arrays.exe,org.eclipse.launchbar.core.descriptorType.default\:Struct.exe,org.eclipse.launchbar.core.descriptorType.default\:ABM_GENERICO.exe
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:TP_1.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:TP_1.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

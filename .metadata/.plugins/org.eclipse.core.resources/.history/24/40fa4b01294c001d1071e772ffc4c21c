@@ -193,9 +193,6 @@ int abm_ListadoModificacionGenerico(eGenerico *lista, int tam) {
 		index = abm_EncontrarGenericoPorId(lista, tam, idGenerico);
 		auxiliar = abm_ModificacionGenerico(lista[index]);
 
-		printf("\nUsuario a modificar: ");
-		abm_MostrarUnGenerico(lista[index]);
-
 		utn_getNumero(&confirmar,
 				"\nEsta seguro que modificar el usuario? (1. SI - 0. NO)",
 				"Opcion incorrecta", 0, 1, 9999);

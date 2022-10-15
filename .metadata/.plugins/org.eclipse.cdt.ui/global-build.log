@@ -1,2 +1,50 @@
 Info: Nothing to build for ABM_GENERICO
 Info: Nothing to build for ABM_GENERICO
+22:22:44 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_ListadoBajaGenerico':
+..\src\gen_Abm.c:132:5: error: incompatible type for argument 1 of 'abm_MostrarUnGenerico'
+     abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\gen_Abm.c:54:6: note: expected 'eGenerico {aka struct <anonymous>}' but argument is of type 'int'
+ void abm_MostrarUnGenerico(eGenerico Generico) {
+      ^~~~~~~~~~~~~~~~~~~~~
+22:22:46 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_ListadoBajaGenerico':
+..\src\gen_Abm.c:132:5: error: incompatible type for argument 1 of 'abm_MostrarUnGenerico'
+     abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\gen_Abm.c:54:6: note: expected 'eGenerico {aka struct <anonymous>}' but argument is of type 'int'
+ void abm_MostrarUnGenerico(eGenerico Generico) {
+      ^~~~~~~~~~~~~~~~~~~~~
+22:23:15 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_ListadoBajaGenerico':
+..\src\gen_Abm.c:132:67: error: expected ']' before ')' token
+     lista[abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1)];
+                                                                   ^
+..\src\gen_Abm.c:132:68: error: expected ';' before ']' token
+     lista[abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1)];
+                                                                    ^
+..\src\gen_Abm.c:132:68: error: expected statement before ']' token
+22:23:30 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+22:23:56 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+22:30:52 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+22:31:26 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 

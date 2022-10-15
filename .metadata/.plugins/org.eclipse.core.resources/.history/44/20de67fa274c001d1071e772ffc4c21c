@@ -129,7 +129,7 @@ int abm_ListadoBajaGenerico(eGenerico *lista, int tam) {
 
 		printf("\nUsuario a dar de baja: ");
 		abm_MostrarUnGenerico(
-				lista[abm_EncontrarGenericoPorId(lista, tam, idGenerico)]);
+				lista[abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1)];
 		utn_getNumero(&confirmar,
 				"\nEsta seguro que desea dar de baja? (1. SI - 0. NO)",
 				"Opcion incorrecta", 0, 1, 9999);
@@ -192,9 +192,6 @@ int abm_ListadoModificacionGenerico(eGenerico *lista, int tam) {
 
 		index = abm_EncontrarGenericoPorId(lista, tam, idGenerico);
 		auxiliar = abm_ModificacionGenerico(lista[index]);
-
-		printf("\nUsuario a modificar: ");
-		abm_MostrarUnGenerico(lista[index]);
 
 		utn_getNumero(&confirmar,
 				"\nEsta seguro que modificar el usuario? (1. SI - 0. NO)",

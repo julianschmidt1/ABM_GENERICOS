@@ -151,14 +151,14 @@ int utn_getNumeroDecimal(float *pResultado, char *mensaje, char *mensajeError,
 int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,
 		int minimo, int maximo, int reintentos) {
 	int bufferInt;
-	int rtn = -1;
+	int rtn = 0;
 	while (reintentos > 0) {
 		reintentos--;
 		printf("%s", mensaje);
 		if (getInt(&bufferInt) == 1) {
 			if (bufferInt >= minimo && bufferInt <= maximo) {
 				*pResultado = bufferInt;
-				rtn = 0;
+				rtn = 1;
 				break;
 			}
 		}

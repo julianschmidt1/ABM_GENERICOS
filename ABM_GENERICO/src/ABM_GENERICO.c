@@ -11,49 +11,78 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "gen_Abm.h"
+#include "menu.h"
 #define MAX_GENERICOS 20
 
 int main(void) {
 	setbuf(stdout, NULL);
 	int opcion;
 	eGenerico genericos[MAX_GENERICOS];
-	char nombre[20];
-	char apellido[20];
-	int idUser;
+	eGenerico nuevoGenerico;
+	int idGenerico;
+	int contadorAltas = 0;
+	int contadorBajas = 0;
+	int confirmarSalida;
 
-	abm_InicializarGenerico(genericos, MAX_GENERICOS);
+	if (!abm_inicializarGenerico(genericos, MAX_GENERICOS)) {
+		puts("\n ----------- OCURRIO UN ERROR AL INICIALIZAR ------------");
+	}
 
 	do {
-		printf("\n1. ALTAS \n"
+		opcion = menu_opciones("\n------ MENU PRINCIPAL -----", "\n1. ALTAS \n"
 				"2. MODIFICAR \n"
 				"3. BAJA \n"
 				"4. INFORMAR \n"
-				"0. SALIR \n");
-		utn_getNumero(&opcion, "\nIngrese la opcion: ",
-				"La opcion ingresada no es valida", 0, 4, 99999);
+				"5. SALIR \n", "\nError. Opcion invalida, ingrese la opcion: ",
+				1, 5);
 		switch (opcion) {
 		case 1:
 			utn_getString("\nIngresa nombre: ",
 					"\nNombre invalido, ingresalo de vuelta", 99999, 20,
-					nombre);
+					nuevoGenerico.name);
 			utn_getString("\nIngresa apellido: ",
 					"\nApellido invalido, ingresalo de vuelta", 99999, 20,
-					apellido);
-			idUser = abm_ObtenerIdGenerico();
-			abm_AltaGenerico(genericos, MAX_GENERICOS, idUser, nombre,
-					apellido);
+					nuevoGenerico.lastName);
+			utn_getNumero(&nuevoGenerico.age, "\nIngrese la edad: ",
+					"\nError. Ingrese la edad: ", 1, 100, 9999);
+			idGenerico = abm_obtenerIdGenerico();
+			if (abm_altaGenerico(genericos, MAX_GENERICOS, idGenerico,
+					nuevoGenerico)) {
+				contadorAltas++;
+			} else {
+				puts("\n\n ---- OCURRIO UN ERROR EN EL ALTA  ---- ");
+			}
 			break;
 		case 2:
-			abm_ListadoModificacionGenerico(genericos, MAX_GENERICOS);
+			if (validarIngresoOpciones(contadorAltas, contadorBajas)) {
+				abm_listadoModificacionGenerico(genericos, MAX_GENERICOS);
+			} else {
+				puts("\n\n --- NO EXISTEN USUARIOS PARA DAR DE BAJA -----");
+			}
 			break;
 		case 3:
-			abm_ListadoBajaGenerico(genericos, MAX_GENERICOS);
+			if (validarIngresoOpciones(contadorAltas, contadorBajas)) {
+				abm_listadoBajaGenerico(genericos, MAX_GENERICOS);
+			} else {
+				puts("\n\n --- NO EXISTEN USUARIOS PARA DAR MODIFICAR -----");
+			}
 			break;
 		case 4:
-			abm_MostrarTodosGenerico(genericos, MAX_GENERICOS);
+			abm_mostrarTodosGenerico(genericos, MAX_GENERICOS);
+			break;
+		case 5:
+			utn_getNumero(&confirmarSalida,
+					"\nEsta seguro que desea salir del programa? (1. SI | 0. NO) \nIngrese la opcion: ",
+					"\nError. Opcion ingresada invalida. Intentelo nuevamente",
+					0, 1, 9999);
+			if (confirmarSalida) {
+				puts("\n GRACIAS POR USAR EL SISTEMA.");
+			} else {
+				puts("\n Volviendo al menu principal ...");
+			}
 			break;
 		}
-	} while (opcion != 0);
+	} while (opcion != 5 || !confirmarSalida);
 
 	return 0;
 }

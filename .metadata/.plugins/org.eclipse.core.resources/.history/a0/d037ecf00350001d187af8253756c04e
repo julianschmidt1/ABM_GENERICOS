@@ -1,0 +1,241 @@
+#include "gen_Abm.h"
+
+int abm_obtenerIdGenerico(void) {
+	// La variable idIncrementalGenerico es static para que preserve su valor incluso cuando este fuera de scope, logrando ser auto incremental
+	static int idIncrementalGenerico = 0;
+	return idIncrementalGenerico++;
+}
+
+int abm_inicializarGenerico(eGenerico *lista, int tam) {
+	int i;
+	int rtn = 0;
+
+	if (lista != NULL && tam > 0) {
+		rtn = 1;
+		for (i = 0; i < tam; i++) {
+			lista[i].isEmpty = LIBRE;
+		}
+	}
+
+	return rtn;
+}
+
+int abm_obtenerIndiceLibreGenerico(eGenerico *lista, int tam) {
+	int rtn = -1;
+
+	if (lista != NULL && tam > 0) {
+		for (int i = 0; i < tam; i++) {
+			if (lista[i].isEmpty == LIBRE) {
+				rtn = i;
+				break;
+			}
+		}
+	}
+
+	return rtn;
+}
+
+int abm_encontrarGenericoPorId(eGenerico *lista, int tam, int id) {
+	int rtn = -1;
+	int i;
+
+	if (lista != NULL && tam > 0) {
+		for (i = 0; i < tam; i++) {
+			if (lista[i].id == id && lista[i].isEmpty == OCUPADO) {
+				rtn = i;
+				break;
+			}
+		}
+	}
+
+	return rtn;
+}
+
+void abm_mostrarUnGenerico(eGenerico Generico) {
+	// Modificar esto para que muestre data generica siempre
+	printf("\n|%2d  | %14s  | %14s     | %7d |", Generico.id, Generico.name,
+			Generico.lastName, Generico.age);
+}
+
+int abm_mostrarTodosGenerico(eGenerico *lista, int tam) {
+	int i;
+	int rtn = 0;
+	int cantidad = 0;
+
+	if (lista != NULL && tam > 0) {
+		puts(
+				"\n=========================================================================================");
+		puts("| ID |     NOMBRE            | APELLIDO          |  EDAD  |");
+		puts(
+				"--------------------------------------------------------------------------------------------");
+		puts(
+				"--------------------------------------------------------------------------------------------");
+		for (i = 0; i < tam; i++) {
+			if (lista[i].isEmpty == OCUPADO) {
+				abm_mostrarUnGenerico(lista[i]);
+				cantidad++;
+			}
+		}
+		puts(
+				"\n==========================================================================================");
+	}
+
+	if (cantidad > 0) {
+		rtn = 1;
+	}
+
+	return rtn;
+}
+
+int abm_altaGenerico(eGenerico *lista, int tam, int id, eGenerico generico) {
+	int rtn = 0;
+
+	int index = abm_obtenerIndiceLibreGenerico(lista, tam);
+	if (index != -1 && lista != NULL) {
+		// Aca deberia recibir los datos ya cargados y asignarlos al id libre que recibo por params
+		generico.id = id;
+		generico.isEmpty = OCUPADO;
+		lista[index] = generico;
+
+		rtn = 1;
+	}
+	return rtn;
+}
+
+int abm_listadoBajaGenerico(eGenerico *lista, int tam) {
+	int rtn = -1;
+	int idGenerico;
+	int flag = 0;
+	int confirmar = 0;
+
+	if (abm_mostrarTodosGenerico(lista, tam)) {
+		flag = 1;
+	}
+
+	if (flag) {
+		utn_getNumero(&idGenerico, "\nIngrese ID a dar de baja",
+				"Valor incorrecto", 0, tam, 9999);
+
+		while (abm_encontrarGenericoPorId(lista, tam, idGenerico) == -1) {
+			puts("\n --- ID INEXISTENTE ---");
+
+			utn_getNumero(&idGenerico, "\nIngrese ID a dar de baja: ",
+					"Valor incorrecto", 0, tam, 99999);
+		}
+
+		printf("\nUsuario a dar de baja: ");
+		abm_mostrarUnGenerico(
+				lista[abm_encontrarGenericoPorId(lista, tam, idGenerico)]);
+		utn_getNumero(&confirmar,
+				"\nEsta seguro que desea dar de baja? (1. SI - 0. NO)",
+				"Opcion incorrecta", 0, 1, 9999);
+		if (confirmar) {
+			abm_bajaGenerico(lista, tam, idGenerico);
+		}
+	}
+
+	return rtn;
+}
+
+int abm_bajaGenerico(eGenerico *lista, int tam, int id) {
+	int rtn = 0;
+	int index;
+
+	index = abm_encontrarGenericoPorId(lista, tam, id);
+	if (index != -1) {
+		lista[index].isEmpty = BAJA;
+		printf("\n ---- Usuario: %s %s dado de baja exitosamente ---- \n",
+				lista[index].name, lista[index].lastName);
+		rtn = 1;
+	}
+
+	return rtn;
+}
+
+eGenerico abm_modificacionGenerico(eGenerico Generico) {
+	eGenerico auxiliar = Generico;
+	int opcionSeleccionada;
+
+	do {
+		opcionSeleccionada = menu_opciones(
+				"\n ------- MODIFICACION DE JUGADOR -----------",
+				"\n 1. MODIFICAR NOMBRE"
+						"\n 2. MODIFICAR APELLIDO"
+						"\n 3. MODIFICAR EDAD"
+						"\n 7. FINALIZAR MODIFICACIONES",
+				"Error, la opcion seleccionada no es valida", 1, 7);
+
+		switch (opcionSeleccionada) {
+		case 1:
+			utn_getString("\nIngrese el nombre : ",
+					"\nError. Nombre invalido. Ingrese el nombre :", 9999,
+					MAX_CHARS_NAME, auxiliar.name);
+			break;
+		case 2:
+			utn_getString("\nIngrese la posicion del jugador: ",
+					"\nError. Posicion invalida. Ingrese el nombre : ", 9999,
+					MAX_CHARS_NAME, auxiliar.lastName);
+			break;
+		case 3:
+			utn_getNumero(&auxiliar.age, "\nIngrese la edad: ",
+					"\nError. Ingrese la edad: ", 1, 100, 9999);
+			break;
+		case 7:
+			puts("Volviendo al menu principal");
+			break;
+		}
+	} while (opcionSeleccionada != 7);
+
+	return auxiliar;
+}
+
+int abm_listadoModificacionGenerico(eGenerico *lista, int tam) {
+	int rtn = 0;
+	int idGenerico;
+	int index;
+	int flag = 0;
+	eGenerico auxiliar;
+	int confirmar = 0;
+
+	if (abm_mostrarTodosGenerico(lista, tam)) {
+		flag = 1;
+	}
+
+	if (flag) {
+		utn_getNumero(&idGenerico, "\nIngrese ID a modificar: ",
+				"Valor incorrecto", 0, tam, 99999);
+
+		while (abm_encontrarGenericoPorId(lista, tam, idGenerico) == -1) {
+			puts("NO EXISTE ID.");
+
+			utn_getNumero(&idGenerico, "\nIngrese ID a modificar: ",
+					"Valor incorrecto", 0, tam, 99999);
+		}
+
+		index = abm_encontrarGenericoPorId(lista, tam, idGenerico);
+		auxiliar = abm_modificacionGenerico(lista[index]);
+
+		printf("\nUsuario a modificar: ");
+		abm_mostrarUnGenerico(lista[index]);
+
+		utn_getNumero(&confirmar,
+				"\nEsta seguro que modificar el usuario? (1. SI - 0. NO)",
+				"Opcion incorrecta", 0, 1, 9999);
+		if (confirmar) {
+			lista[index] = auxiliar;
+			rtn = 1;
+		}
+	}
+
+	return rtn;
+}
+
+int validarIngresoOpciones(int contadorAltas, int contadorBajas) {
+	int rtn = 0;
+
+	if (contadorAltas != contadorBajas) {
+		rtn = 1;
+	}
+
+	return rtn;
+}

@@ -1,50 +1,805 @@
 Info: Nothing to build for ABM_GENERICO
+18:51:49 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+..\src\ABM_GENERICO.c: In function 'main':
+..\src\ABM_GENERICO.c:32:12: warning: implicit declaration of function 'menu_opciones' [-Wimplicit-function-declaration]
+   opcion = menu_opciones("\n------ MENU PRINCIPAL -----", "",
+            ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+18:51:58 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+18:52:07 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
 Info: Nothing to build for ABM_GENERICO
-22:22:44 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+18:52:31 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:52:32 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+18:53:20 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:53:34 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:53:36 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+18:54:09 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+Info: Nothing to build for ABM_GENERICO
+18:55:28 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:55:30 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+18:56:15 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:56:17 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+18:58:22 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:58:24 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+19:00:24 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:00:25 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+19:01:25 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:01:29 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+19:02:45 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:17:11 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+..\src\ABM_GENERICO.c: In function 'main':
+..\src\ABM_GENERICO.c:46:47: error: incompatible type for argument 3 of 'abm_AltaGenerico'
+    abm_AltaGenerico(genericos, MAX_GENERICOS, nuevoGenerico);
+                                               ^~~~~~~~~~~~~
+In file included from ..\src\ABM_GENERICO.c:13:0:
+..\src\gen_Abm.h:29:5: note: expected 'int' but argument is of type 'eGenerico {aka struct <anonymous>}'
+ int abm_AltaGenerico(eGenerico *lista, int tam, int id, eGenerico generico);
+     ^~~~~~~~~~~~~~~~
+..\src\ABM_GENERICO.c:46:4: error: too few arguments to function 'abm_AltaGenerico'
+    abm_AltaGenerico(genericos, MAX_GENERICOS, nuevoGenerico);
+    ^~~~~~~~~~~~~~~~
+In file included from ..\src\ABM_GENERICO.c:13:0:
+..\src\gen_Abm.h:29:5: note: declared here
+ int abm_AltaGenerico(eGenerico *lista, int tam, int id, eGenerico generico);
+     ^~~~~~~~~~~~~~~~
+..\src\ABM_GENERICO.c:24:6: warning: variable 'idUser' set but not used [-Wunused-but-set-variable]
+  int idUser;
+      ^~~~~~
+..\src\ABM_GENERICO.c:23:7: warning: unused variable 'apellido' [-Wunused-variable]
+  char apellido[20];
+       ^~~~~~~~
+..\src\ABM_GENERICO.c:22:7: warning: unused variable 'nombre' [-Wunused-variable]
+  char nombre[20];
+       ^~~~~~
+19:17:39 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+..\src\ABM_GENERICO.c: In function 'main':
+..\src\ABM_GENERICO.c:23:7: warning: unused variable 'apellido' [-Wunused-variable]
+  char apellido[20];
+       ^~~~~~~~
+..\src\ABM_GENERICO.c:22:7: warning: unused variable 'nombre' [-Wunused-variable]
+  char nombre[20];
+       ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c:85:5: error: conflicting types for 'abm_AltaGenerico'
+ int abm_AltaGenerico(eGenerico *lista, int tam, int id, char name[],
+     ^~~~~~~~~~~~~~~~
+In file included from ..\src\gen_Abm.c:1:0:
+..\src\gen_Abm.h:29:5: note: previous declaration of 'abm_AltaGenerico' was here
+ int abm_AltaGenerico(eGenerico *lista, int tam, int id, eGenerico generico);
+     ^~~~~~~~~~~~~~~~
+19:17:46 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c:85:5: error: conflicting types for 'abm_AltaGenerico'
+ int abm_AltaGenerico(eGenerico *lista, int tam, int id, char name[],
+     ^~~~~~~~~~~~~~~~
+In file included from ..\src\gen_Abm.c:1:0:
+..\src\gen_Abm.h:29:5: note: previous declaration of 'abm_AltaGenerico' was here
+ int abm_AltaGenerico(eGenerico *lista, int tam, int id, eGenerico generico);
+     ^~~~~~~~~~~~~~~~
+19:18:24 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
-..\src\gen_Abm.c: In function 'abm_ListadoBajaGenerico':
-..\src\gen_Abm.c:132:5: error: incompatible type for argument 1 of 'abm_MostrarUnGenerico'
-     abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1);
-     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\gen_Abm.c:54:6: note: expected 'eGenerico {aka struct <anonymous>}' but argument is of type 'int'
- void abm_MostrarUnGenerico(eGenerico Generico) {
-      ^~~~~~~~~~~~~~~~~~~~~
-22:22:46 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+..\src\gen_Abm.c: In function 'abm_AltaGenerico':
+..\src\gen_Abm.c:96:28: error: 'name' undeclared (first use in this function)
+   strcpy(auxGenerico.name, name);
+                            ^~~~
+..\src\gen_Abm.c:96:28: note: each undeclared identifier is reported only once for each function it appears in
+..\src\gen_Abm.c:97:32: error: 'lastName' undeclared (first use in this function)
+   strcpy(auxGenerico.lastName, lastName);
+                                ^~~~~~~~
+19:20:39 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_altaGenerico':
+..\src\gen_Abm.c:90:14: warning: implicit declaration of function 'abm_ObtenerIndiceLibreGenerico' [-Wimplicit-function-declaration]
+  int index = abm_ObtenerIndiceLibreGenerico(lista, tam);
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:21:33 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:21:40 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+src\gen_Abm.o: In function `abm_altaGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:90: undefined reference to `abm_ObtenerIndiceLibreGenerico'
+collect2.exe: error: ld returned 1 exit status
+19:21:56 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
-..\src\gen_Abm.c: In function 'abm_ListadoBajaGenerico':
-..\src\gen_Abm.c:132:5: error: incompatible type for argument 1 of 'abm_MostrarUnGenerico'
-     abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1);
-     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\gen_Abm.c:54:6: note: expected 'eGenerico {aka struct <anonymous>}' but argument is of type 'int'
- void abm_MostrarUnGenerico(eGenerico Generico) {
-      ^~~~~~~~~~~~~~~~~~~~~
-22:23:15 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+19:24:00 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+Info: Nothing to build for ABM_GENERICO
+19:25:42 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+Info: Nothing to build for ABM_GENERICO
+19:26:39 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:26:40 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+19:27:23 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:27:24 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+Info: Nothing to build for ABM_GENERICO
+19:29:00 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_altaGenerico':
+..\src\gen_Abm.c:96:23: error: expected ')' before ':' token
+   printf("\n %d %s %s": auxGenerico.name);
+                       ^
+..\src\gen_Abm.c:96:15: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   printf("\n %d %s %s": auxGenerico.name);
+               ^
+..\src\gen_Abm.c:96:18: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   printf("\n %d %s %s": auxGenerico.name);
+                  ^
+..\src\gen_Abm.c:96:21: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   printf("\n %d %s %s": auxGenerico.name);
+                     ^
+19:29:21 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:29:22 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+19:30:45 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:30:47 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+19:32:00 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:32:02 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+19:33:19 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+..\src\ABM_GENERICO.c: In function 'main':
+..\src\ABM_GENERICO.c:48:4: warning: implicit declaration of function 'abmlistadoModificacionGenerico' [-Wimplicit-function-declaration]
+    abmlistadoModificacionGenerico(genericos, MAX_GENERICOS);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_listadoModificacionGenerico':
+..\src\gen_Abm.c:183:14: warning: implicit declaration of function 'abm_ModificacionGenerico' [-Wimplicit-function-declaration]
+   auxiliar = abm_ModificacionGenerico(lista[index]);
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\gen_Abm.c:183:12: error: incompatible types when assigning to type 'eGenerico {aka struct <anonymous>}' from type 'int'
+   auxiliar = abm_ModificacionGenerico(lista[index]);
+            ^
+19:33:27 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_listadoModificacionGenerico':
+..\src\gen_Abm.c:183:14: warning: implicit declaration of function 'abm_ModificacionGenerico' [-Wimplicit-function-declaration]
+   auxiliar = abm_ModificacionGenerico(lista[index]);
+              ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\gen_Abm.c:183:12: error: incompatible types when assigning to type 'eGenerico {aka struct <anonymous>}' from type 'int'
+   auxiliar = abm_ModificacionGenerico(lista[index]);
+            ^
+19:33:32 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:33:48 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
 ..\src\gen_Abm.c: In function 'abm_ListadoBajaGenerico':
-..\src\gen_Abm.c:132:67: error: expected ']' before ')' token
-     lista[abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1)];
-                                                                   ^
-..\src\gen_Abm.c:132:68: error: expected ';' before ']' token
-     lista[abm_EncontrarGenericoPorId(lista, tam, idGenerico) == -1)];
-                                                                    ^
-..\src\gen_Abm.c:132:68: error: expected statement before ']' token
-22:23:30 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+..\src\gen_Abm.c:126:4: warning: implicit declaration of function 'abm_BajaGenerico' [-Wimplicit-function-declaration]
+    abm_BajaGenerico(lista, tam, idGenerico);
+    ^~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:33:52 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
-gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
-22:23:56 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:33:59 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+..\src\ABM_GENERICO.c: In function 'main':
+..\src\ABM_GENERICO.c:54:4: warning: implicit declaration of function 'abm_MostrarTodosGenerico' [-Wimplicit-function-declaration]
+    abm_MostrarTodosGenerico(genericos, MAX_GENERICOS);
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:34:05 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:34:12 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:34:13 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:34:37 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
-gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
-22:30:52 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+..\src\gen_Abm.c: In function 'abm_MostrarTodosGenerico':
+..\src\gen_Abm.c:69:5: warning: implicit declaration of function 'abm_MostrarUnGenerico' [-Wimplicit-function-declaration]
+     abm_MostrarUnGenerico(lista[i]);
+     ^~~~~~~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:34:41 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
-gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
-22:31:26 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+..\src\gen_Abm.c: In function 'abm_listadoBajaGenerico':
+..\src\gen_Abm.c:120:3: warning: implicit declaration of function 'abm_MostrarUnGenerico' [-Wimplicit-function-declaration]
+   abm_MostrarUnGenerico(
+   ^~~~~~~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:34:46 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
-gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" 
+..\src\gen_Abm.c: In function 'abm_listadoModificacionGenerico':
+..\src\gen_Abm.c:186:3: warning: implicit declaration of function 'abm_MostrarUnGenerico' [-Wimplicit-function-declaration]
+   abm_MostrarUnGenerico(lista[index]);
+   ^~~~~~~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:34:49 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:35:22 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:45:12 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+..\src\ABM_GENERICO.c: In function 'main':
+..\src\ABM_GENERICO.c:54:8: warning: 'contadorBajas' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    if (validarIngresoOpciones(contadorAltas, contadorBajas))
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:45:23 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:49:01 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+..\src\ABM_GENERICO.c: In function 'main':
+..\src\ABM_GENERICO.c:75:23: warning: 'confirmarSalida' is used uninitialized in this function [-Wuninitialized]
+  } while (opcion != 5 || !confirmarSalida);
+           ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:49:44 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:51:48 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:59:46 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+..\src\ABM_GENERICO.c: In function 'main':
+..\src\ABM_GENERICO.c:46:18: warning: passing argument 1 of 'utn_getNumero' makes pointer from integer without a cast [-Wint-conversion]
+    utn_getNumero(nuevoGenerico.age, "\nIngrese la edad: ",
+                  ^~~~~~~~~~~~~
+In file included from ..\src\gen_Abm.h:7:0,
+                 from ..\src\ABM_GENERICO.c:13:
+..\src\Inputs.h:15:5: note: expected 'int *' but argument is of type 'int'
+ int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,
+     ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_modificacionGenerico':
+..\src\gen_Abm.c:152:24: warning: implicit declaration of function 'menu_opciones' [-Wimplicit-function-declaration]
+   opcionSeleccionada = menu_opciones(
+                        ^~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:59:57 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:00:30 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_modificacionGenerico':
+..\src\gen_Abm.c:152:24: warning: implicit declaration of function 'menu_opciones' [-Wimplicit-function-declaration]
+   opcionSeleccionada = menu_opciones(
+                        ^~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:00:53 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:00:55 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:00:59 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+src\ABM_GENERICO.o: In function `main':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/ABM_GENERICO.c:71: undefined reference to `abm_mostrarTodosGenerico'
+src\gen_Abm.o: In function `abm_listadoBajaGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:103: undefined reference to `abm_mostrarTodosGenerico'
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:125: undefined reference to `abm_bajaGenerico'
+collect2.exe: error: ld returned 1 exit status
+20:02:30 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+src\ABM_GENERICO.o: In function `main':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/ABM_GENERICO.c:71: undefined reference to `abm_mostrarTodosGenerico'
+src\gen_Abm.o: In function `abm_listadoBajaGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:103: undefined reference to `abm_mostrarTodosGenerico'
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:125: undefined reference to `abm_bajaGenerico'
+collect2.exe: error: ld returned 1 exit status
+20:05:34 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+src\ABM_GENERICO.o: In function `main':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/ABM_GENERICO.c:71: undefined reference to `abm_mostrarTodosGenerico'
+src\gen_Abm.o: In function `abm_listadoBajaGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:103: undefined reference to `abm_mostrarTodosGenerico'
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:125: undefined reference to `abm_bajaGenerico'
+collect2.exe: error: ld returned 1 exit status
+20:05:47 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_modificacionGenerico':
+..\src\gen_Abm.c:152:24: warning: implicit declaration of function 'menu_opciones' [-Wimplicit-function-declaration]
+   opcionSeleccionada = menu_opciones(
+                        ^~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+src\ABM_GENERICO.o: In function `main':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/ABM_GENERICO.c:71: undefined reference to `abm_mostrarTodosGenerico'
+src\gen_Abm.o: In function `abm_listadoBajaGenerico':
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:103: undefined reference to `abm_mostrarTodosGenerico'
+C:\Users\Julian\Desktop\ABM_GENERICOS\ABM_GENERICO\Debug/../src/gen_Abm.c:125: undefined reference to `abm_bajaGenerico'
+collect2.exe: error: ld returned 1 exit status
+20:06:45 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+Info: Nothing to build for ABM_GENERICO
+20:07:43 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_mostrarTodosGenerico':
+..\src\gen_Abm.c:66:10: warning: unknown escape sequence: '\040'
+   printf("\n\ ID       NOMBRE       APELLIDO");
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:09:13 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:09:39 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:09:51 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:10:15 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:11:14 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_mostrarUnGenerico':
+..\src\gen_Abm.c:56:40: warning: conversion lacks type at end of format [-Wformat=]
+  printf("\n %5d     %14s     %14s     %8", Generico.id, Generico.name,
+                                        ^
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:11:24 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_mostrarUnGenerico':
+..\src\gen_Abm.c:56:41: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+  printf("\n %5d     %14s     %14s     %7d", Generico.id, Generico.name,
+                                         ^
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:11:47 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+..\src\gen_Abm.c: In function 'abm_mostrarUnGenerico':
+..\src\gen_Abm.c:57:31: error: 'eGenerico {aka struct <anonymous>}' has no member named 'edad'
+    Generico.lastName, Generico.edad);
+                               ^
+20:11:50 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:11:52 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:12:25 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:12:26 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:12:40 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:12:41 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:12:58 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:13:00 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:13:15 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:13:16 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:13:36 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:13:37 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:13:52 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:13:53 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:14:24 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:14:25 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:14:43 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:14:44 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:14:59 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:15:00 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:15:12 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:15:13 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:15:25 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:15:26 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:15:37 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:15:38 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:16:00 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:16:01 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:16:16 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:16:17 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:16:31 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:16:32 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:16:43 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:16:44 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:16:57 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:16:58 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:17:11 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:17:13 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:17:35 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:17:36 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:17:53 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:17:54 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:18:06 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+d:/software/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ABM_GENERICO.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:18:09 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:19:54 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:20:15 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+Info: Nothing to build for ABM_GENERICO
+20:22:06 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:22:42 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+Info: Nothing to build for ABM_GENERICO
+20:23:46 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+Info: Nothing to build for ABM_GENERICO

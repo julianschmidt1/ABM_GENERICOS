@@ -1,0 +1,76 @@
+/*
+ ============================================================================
+ Name        : ABM_GENERICO.c
+ Author      : Julián Schmidt
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "gen_Abm.h"
+#include "menu.h"
+#define MAX_GENERICOS 20
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int opcion;
+	eGenerico genericos[MAX_GENERICOS];
+	eGenerico nuevoGenerico;
+	int idGenerico;
+	int contadorAltas = 0;
+	int contadorBajas = 0;
+
+	if (!abm_inicializarGenerico(genericos, MAX_GENERICOS)) {
+		puts("\n ----------- OCURRIO UN ERROR AL INICIALIZAR ------------");
+	}
+
+	do {
+		opcion = menu_opciones("\n------ MENU PRINCIPAL -----", "\n1. ALTAS \n"
+				"2. MODIFICAR \n"
+				"3. BAJA \n"
+				"4. INFORMAR \n"
+				"5. SALIR \n", "\nError. Opcion invalida, ingrese la opcion: ",
+				1, 5);
+		switch (opcion) {
+		case 1:
+			utn_getString("\nIngresa nombre: ",
+					"\nNombre invalido, ingresalo de vuelta", 99999, 20,
+					nuevoGenerico.name);
+			utn_getString("\nIngresa apellido: ",
+					"\nApellido invalido, ingresalo de vuelta", 99999, 20,
+					nuevoGenerico.lastName);
+			idGenerico = abm_obtenerIdGenerico();
+			if (abm_altaGenerico(genericos, MAX_GENERICOS, idGenerico,
+					nuevoGenerico)) {
+				contadorAltas++;
+			} else {
+				puts("\n\n ---- OCURRIO UN ERROR EN EL ALTA  ---- ");
+			}
+			break;
+		case 2:
+			if (validarIngresoOpciones(contadorAltas, contadorBajas)) {
+				abm_listadoBajaGenerico(genericos, MAX_GENERICOS);
+			} else {
+				puts("\n\n--- NO EXISTEN USUARIOS PARA DAR MODIFICAR -----");
+			}
+			break;
+		case 3:
+			if (validarIngresoOpciones(contadorAltas, contadorBajas)) {
+				abm_listadoModificacionGenerico(genericos, MAX_GENERICOS);
+			} else {
+				puts("\n\n--- NO EXISTEN USUARIOS PARA DAR DE BAJA -----");
+			}
+			break;
+		case 4:
+			abm_mostrarTodosGenerico(genericos, MAX_GENERICOS);
+			break;
+		case 5:
+			break;
+		}
+	} while (opcion != 5);
+
+	return 0;
+}

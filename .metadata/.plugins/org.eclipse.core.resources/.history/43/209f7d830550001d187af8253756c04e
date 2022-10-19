@@ -106,7 +106,6 @@ int abm_listadoBajaGenerico(eGenerico *lista, int tam) {
 	int flag = 0;
 	int confirmar = 0;
 
-	ordenarJugadoresId(lista, tam);
 	if (abm_mostrarTodosGenerico(lista, tam)) {
 		flag = 1;
 	}
@@ -196,7 +195,6 @@ int abm_listadoModificacionGenerico(eGenerico *lista, int tam) {
 	eGenerico auxiliar;
 	int confirmar = 0;
 
-	ordenarJugadoresId(lista, tam);
 	if (abm_mostrarTodosGenerico(lista, tam)) {
 		flag = 1;
 	}
@@ -232,9 +230,11 @@ int abm_listadoModificacionGenerico(eGenerico *lista, int tam) {
 
 int validarIngresoOpciones(int contadorAltas, int contadorBajas) {
 	int rtn = 0;
+
 	if (contadorAltas != contadorBajas) {
 		rtn = 1;
 	}
+
 	return rtn;
 }
 

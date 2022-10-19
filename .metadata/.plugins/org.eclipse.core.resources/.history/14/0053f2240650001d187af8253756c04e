@@ -40,7 +40,5 @@ void abm_mostrarUnGenerico(eGenerico Generico);
 int abm_mostrarTodosGenerico(eGenerico *lista, int tam);
 // VALIDACION
 int validarIngresoOpciones(int contadorAltas, int contadorBajas);
-// ORDENAMIENTO
-int ordenarJugadoresId(eGenerico *lista, int tam);
 
 #endif /* GEN_ABM_H_ */

@@ -803,3 +803,38 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
 gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
 Info: Nothing to build for ABM_GENERICO
+20:26:40 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:26:53 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:32:02 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+In file included from ..\src\ABM_GENERICO.c:13:0:
+..\src\gen_Abm.h:44:38: error: unknown type name 'tam'
+ ordenarJugadoresId(eGenerico *lista, tam);
+                                      ^~~
+20:32:09 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+In file included from ..\src\gen_Abm.c:1:0:
+..\src\gen_Abm.h:44:1: warning: data definition has no type or storage class
+ ordenarJugadoresId(eGenerico *lista, int tam);
+ ^~~~~~~~~~~~~~~~~~
+..\src\gen_Abm.h:44:1: warning: type defaults to 'int' in declaration of 'ordenarJugadoresId' [-Wimplicit-int]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+In file included from ..\src\ABM_GENERICO.c:13:0:
+..\src\gen_Abm.h:44:1: warning: data definition has no type or storage class
+ ordenarJugadoresId(eGenerico *lista, int tam);
+ ^~~~~~~~~~~~~~~~~~
+..\src\gen_Abm.h:44:1: warning: type defaults to 'int' in declaration of 'ordenarJugadoresId' [-Wimplicit-int]
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 
+20:32:28 **** Incremental Build of configuration Debug for project ABM_GENERICO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM_GENERICO.o" "..\\src\\ABM_GENERICO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gen_Abm.o" "..\\src\\gen_Abm.c" 
+gcc -o ABM_GENERICO.exe "src\\ABM_GENERICO.o" "src\\Inputs.o" "src\\gen_Abm.o" "src\\menu.o" 

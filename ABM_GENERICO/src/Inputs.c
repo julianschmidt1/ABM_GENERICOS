@@ -1,9 +1,19 @@
 #include "Inputs.h"
+
+/**
+ * \brief Verifica si la cadena ingresada es numerica
+ * \param cadena Cadena de caracteres a ser analizada
+ * \return Retorna 1 si la cadena es numerica y 0 si no lo es
+ */
 static int esNumerica(char *cadena);
+
+/**
+ * \brief Verifica si la cadena ingresada es numerica
+ * \param pResultado Puntero al espacio de memoria donde se dejara el resultado de la funcion
+ * \return Retorna 0 (EXITO) si se obtiene un numero entero y -1 (ERROR) si no
+ *
+ */
 static int getInt(int *pResultado);
-static int myGets(char *cadena, int longitud);
-static int esNumeroDecimal(char *cadena);
-static int getFloat(float *pResultado);
 
 /**
  * \brief Lee de stdin hasta que encuentra un '\n' o hasta que haya copiado en cadena
@@ -13,23 +23,43 @@ static int getFloat(float *pResultado);
  * \return Retorna 0 (EXITO) si se obtiene una cadena y -1 (ERROR) si no
  *
  */
+static int myGets(char *cadena, int longitud);
+
+/**
+ * \brief Verifica si la cadena ingresada es un numero decimal
+ * \param cadena Cadena de caracteres a ser analizada
+ * \return Retorna 1 si la cadena es un numero decimal y 0 si no lo es
+ */
+static int esNumeroDecimal(char *cadena);
+
+/**
+ * \brief Verifica si la cadena ingresada es decimal
+ * \param pResultado Puntero al espacio de memoria donde se dejara el resultado de la funcion
+ * \return Retorna 0 (EXITO) si se obtiene un numero decimal y -1 (ERROR) si no
+ *
+ */
+static int getFloat(float *pResultado);
+
+/// \brief Funcion que solicita la carga al usuario y valida que sea un nombre / nombre de usuario aceptable
+///
+/// \param pResultado Puntero al espacio en memoria en donde se almacenara el resultado
+/// \param longitud longitud de la cadena
+/// \return Retorna 0 en caso de exito y -1 en caso de error
+static int getNombre(char *pResultado, int longitud);
+
 int myGets(char *cadena, int longitud) {
+	int rtn;
 	if (cadena != NULL && longitud > 0
 			&& fgets(cadena, longitud, stdin) == cadena) {
 		fflush(stdin);
 		if (cadena[strlen(cadena) - 1] == '\n') {
 			cadena[strlen(cadena) - 1] = '\0';
 		}
-		return 0;
+		rtn = 0;
 	}
-	return -1;
+	return rtn;
 }
-/**
- * \brief Verifica si la cadena ingresada es numerica
- * \param pResultado Puntero al espacio de memoria donde se dejara el resultado de la funcion
- * \return Retorna 0 (EXITO) si se obtiene un numero entero y -1 (ERROR) si no
- *
- */
+
 static int getInt(int *pResultado) {
 	int rtn = 0;
 	char buffer[64];
@@ -42,12 +72,6 @@ static int getInt(int *pResultado) {
 	return rtn;
 }
 
-/**
- * \brief Verifica si la cadena ingresada es decimal
- * \param pResultado Puntero al espacio de memoria donde se dejara el resultado de la funcion
- * \return Retorna 0 (EXITO) si se obtiene un numero decimal y -1 (ERROR) si no
- *
- */
 static int getFloat(float *pResultado) {
 	int rtn = 0;
 	char buffer[64];
@@ -91,11 +115,6 @@ static int esNumeroDecimal(char *cadena) {
 	return rtn;
 }
 
-/**
- * \brief Verifica si la cadena ingresada es numerica
- * \param cadena Cadena de caracteres a ser analizada
- * \return Retorna 1 si la cadena es numerica y 0 si no lo es
- */
 static int esNumerica(char *cadena) {
 	int i = 0;
 	int retorno = 1;
@@ -111,15 +130,6 @@ static int esNumerica(char *cadena) {
 	return retorno;
 }
 
-/**
- * \brief Solicita un numero al usuario, luego de verificarlo devuelve el resultado
- * \param pResultado Puntero al espacio de memoria donde se dejara el resultado de la funcion
- * \param mensaje Es el mensaje a ser mostrado
- * \param mensajeError Es el mensaje de Error a ser mostrado
- * \param minimo Es el numero maximo a ser aceptado
- * \param maximo Es el minimo minimo a ser aceptado
- * \return Retorna 1 si se obtuvo el numero y 0 si no
- */
 int utn_getNumeroDecimal(float *pResultado, char *mensaje, char *mensajeError,
 		float minimo, float maximo, int reintentos) {
 	float bufferFloat;
@@ -139,15 +149,6 @@ int utn_getNumeroDecimal(float *pResultado, char *mensaje, char *mensajeError,
 	return rtn;
 }
 
-/**
- * \brief Solicita un numero decimal al usuario, leuego de verificarlo devuelve el resultado
- * \param pResultado Puntero al espacio de memoria donde se dejara el resultado de la funcion
- * \param mensaje Es el mensaje a ser mostrado
- * \param mensajeError Es el mensaje de Error a ser mostrado
- * \param minimo Es el numero maximo a ser aceptado
- * \param maximo Es el minimo minimo a ser aceptado
- * \return Retorna 0 si se obtuvo el numero y -1 si no
- */
 int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,
 		int minimo, int maximo, int reintentos) {
 	int bufferInt;
@@ -187,10 +188,6 @@ int getString(char *cadena, int longitud) {
 	}
 	return retorno;
 }
-
-// TODO: DOC DE LA DE ABAJO
-
-static int getNombre(char *pResultado, int longitud);
 
 static int getNombre(char *pResultado, int longitud) {
 	int retorno = -1;

@@ -101,7 +101,7 @@ int abm_altaGenerico(eGenerico *lista, int tam, int id, eGenerico generico) {
 }
 
 int abm_listadoBajaGenerico(eGenerico *lista, int tam) {
-	int rtn = -1;
+	int rtn = 0;
 	int idGenerico;
 	int flag = 0;
 	int confirmar = 0;
@@ -131,6 +131,7 @@ int abm_listadoBajaGenerico(eGenerico *lista, int tam) {
 				"Opcion incorrecta", 0, 1, 9999);
 		if (confirmar) {
 			abm_bajaGenerico(lista, tam, idGenerico);
+			rtn = 1;
 		}
 	}
 
@@ -245,7 +246,7 @@ int ordenarJugadoresId(eGenerico *lista, int tam) {
 	if (lista != NULL && tam > 0) {
 		for (int i = 0; i < tam - 1; i++) {
 			for (int j = i + 1; j < tam; j++) {
-				if (lista[i].id > lista[j].id) {
+				if (lista[i].id < lista[j].id) {
 					auxGenerico = lista[i];
 					lista[i] = lista[j];
 					lista[j] = auxGenerico;

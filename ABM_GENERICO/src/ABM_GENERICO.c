@@ -30,8 +30,8 @@ int main(void) {
 
 	do {
 		opcion = menu_opciones("\n------ MENU PRINCIPAL -----", "\n1. ALTAS \n"
-				"2. MODIFICAR \n"
-				"3. BAJA \n"
+				"2. BAJA \n"
+				"3. MODIFICAR \n"
 				"4. INFORMAR \n"
 				"5. SALIR \n", "\nError. Opcion invalida, ingrese la opcion: ",
 				1, 5);
@@ -55,16 +55,16 @@ int main(void) {
 			break;
 		case 2:
 			if (validarIngresoOpciones(contadorAltas, contadorBajas)) {
-				abm_listadoModificacionGenerico(genericos, MAX_GENERICOS);
+				abm_listadoBajaGenerico(genericos, MAX_GENERICOS);
 			} else {
 				puts("\n\n --- NO EXISTEN USUARIOS PARA DAR DE BAJA -----");
 			}
 			break;
 		case 3:
 			if (validarIngresoOpciones(contadorAltas, contadorBajas)) {
-				abm_listadoBajaGenerico(genericos, MAX_GENERICOS);
+				abm_listadoModificacionGenerico(genericos, MAX_GENERICOS);
 			} else {
-				puts("\n\n --- NO EXISTEN USUARIOS PARA DAR MODIFICAR -----");
+				puts("\n\n --- NO EXISTEN USUARIOS PARA MODIFICAR -----");
 			}
 			break;
 		case 4:
